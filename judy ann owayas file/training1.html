@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+
+        }
+        body div{
+            margin: 0;
+        }
+        table{
+            width: 100%;
+        }
+        #work tr td{
+            vertical-align: top;
+        }
+		#work tr th{
+			color: yellow;
+			}
+        #work input,textarea{
+            width: 95%;
+        }
+        p input{
+            width: 150px;
+        }
+
+        textarea{
+            resize: none;
+        }
+        
+        #btn_Save{
+            background-color: green;
+        } 
+        #btn_Cancel{
+            background-color: orange;
+        } 
+        #btn_Delete{
+            background-color: red;
+        } 
+        #Div1{
+            height: 180px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+        #Div2{
+            height: 2vh;
+            background-color: white;
+			width: 100px;
+			margin: 3px
+        }
+        #Div3{
+            min-height: 70vh;
+            background-color: black;
+            padding: 10px;
+           
+        }
+        #pic{
+            height: 160px;
+            width: 160px;
+            margin: 10px;
+        }
+        .center{
+            text-align: center;
+        }
+        .white{
+            color: white;
+        }
+        .no-margin{
+            margin: 0;
+        }
+        .w-50%{
+            width: 30%;
+        }
+        .w-100{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Div1">
+        <div>
+            <img src="judy.jpg" id="pic">
+        </div>
+        
+    </div>
+    <div id="Div2">
+        
+    </div>
+    <div id="Div3">
+			<b><h3 class="white">Personal Information</h3></b>
+			<b><p class="white">NAME : </b> JUDY ANN </p>
+            <b><p class="white">CONTACT :  </b> 09067368120</p>
+            <b><p class="white">EMAIL : </b>judyannowayas@gmail.com </p>
+        <table id="personalInfo">
+            <tr>
+                <td>
+                    <b class="white">Select Gender</b> 
+                    &nbsp;<input type="radio" name="gender" id="Male" value="Male">
+                    <label for="Male" class="white">Male</label>
+                    <input type="radio" name="gender" id="Female">
+                    <label for="Female" class="white">Female</label>
+                    <input type="radio" name="gender" id="Other">
+                    <label for="Other" class="white">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b class="white">Marital Status : </b>&nbsp;
+                    <select>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Widow">Widow</option>
+                        <option value="Divorced_Annuled">Divorced/Annuled</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b class="white">Full Address : </b>&nbsp;
+                    <input type="text" placeholder="Enter Full Address..." class="w-0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b class="white">Skills : </b>&nbsp;
+                    <input type="checkbox" id="HTML" value="HTML">
+                    <label for="HTML" class="white">Html</label>
+                    <input type="checkbox" id="Java">
+                    <label for="Java" class="white">Java</label>
+                    <input type="checkbox" id="SQL">
+                    <label for="SQL" class="white">SQL</label>
+                </td>
+            </tr>
+        </table>
+        <h2 class="white no-margin">Work Experiences</h2>
+        <table id="work">
+            <tr>
+                <b><th>Company</th></b>
+                <b><th>Company Address</th></b>
+                <b><th>Company Email</th></b>
+                <b><th>Duration</th></b>
+                <b><th>Job Description</th></b>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Company Name..."></td>
+                <td><input type="text" placeholder="Company Address..."></td>
+                <td><input type="text" placeholder="Company Email..."></td>
+                <td><input type="text" placeholder="Tenure..."></td>
+                <td><textarea rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Company Name..."></td>
+                <td><input type="text" placeholder="Company Address..."></td>
+                <td><input type="text" placeholder="Company Email..."></td>
+                <td><input type="text" placeholder="Tenure..."></td>
+                <td><textarea rows="2"></textarea></td>
+            </tr>
+        </table>
+        <p class="w-100 center">
+            <input type="button" value="Save" name="btn_save" id="btn_Save">
+            <input type="button" value="Cancel" name="btn_cancel" id="btn_Cancel">
+            <input type="button" value="Delete" name="btn_delete" id="btn_Delete">
+        </p>
+                
+
+    </div>  
+</body>
+</html>
